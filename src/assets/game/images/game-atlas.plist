@@ -289,6 +289,96 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
+            <key>sc-item-crab.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{239,223}</string>
+                <key>spriteSourceSize</key>
+                <string>{239,223}</string>
+                <key>textureRect</key>
+                <string>{{245,753},{239,223}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>sc-item-fish.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{239,223}</string>
+                <key>spriteSourceSize</key>
+                <string>{239,223}</string>
+                <key>textureRect</key>
+                <string>{{486,791},{239,223}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>sc-item-gourd.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{239,223}</string>
+                <key>spriteSourceSize</key>
+                <string>{239,223}</string>
+                <key>textureRect</key>
+                <string>{{727,791},{239,223}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>sc-item-prawn.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{239,223}</string>
+                <key>spriteSourceSize</key>
+                <string>{239,223}</string>
+                <key>textureRect</key>
+                <string>{{3,978},{239,223}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>sc-item-rooster.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{239,223}</string>
+                <key>spriteSourceSize</key>
+                <string>{239,223}</string>
+                <key>textureRect</key>
+                <string>{{244,978},{239,223}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>sc-item-stag.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{240,223}</string>
+                <key>spriteSourceSize</key>
+                <string>{240,223}</string>
+                <key>textureRect</key>
+                <string>{{3,753},{240,223}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
             <key>x2.png</key>
             <dict>
                 <key>aliases</key>
@@ -363,7 +453,7 @@
             <key>size</key>
             <string>{1024,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:c9a818aa7dea4bab6240451fc39baee4:b6f19d84cab479d517f2a23473e64441:02a452150431e4fb3dc3c23c8a3eb8eb$</string>
+            <string>$TexturePacker:SmartUpdate:e1860e37f7a45c37b1da555ba0920172:6dbd3b313f4a11a673af185484d279ff:02a452150431e4fb3dc3c23c8a3eb8eb$</string>
             <key>textureFileName</key>
             <string>game-atlas.webp</string>
         </dict>
