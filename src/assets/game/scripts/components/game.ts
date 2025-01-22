@@ -12,7 +12,6 @@ import Observer from "observer";
 
 import { siteConfigs } from "../../../scripts/site-configs";
 import { containerOptions, settings } from "../game-settings";
-import { IResult, Plate } from "./plate";
 
 startGame(settings.name, containerOptions, siteConfigs, settings.namespaces);
 const { Rounds, RoundHistories } = gc;
@@ -32,21 +31,15 @@ export default class Game extends GameComponent {
     nodeAudioContainer: Node = null;
 
     @property(Node)
-    nodePlate: Node = null;
-
-    @property(Node)
     nodeWinning: Node = null;
 
-    compPlate: Plate = null;
     protected enableFixHandleFinish = true;
     private audioContainer: AudioContainer = null;
     private winningResult: WinningResult = null;
     private soundWinChoice = ["odd", "even"];
-    private currentFinish: gc.GameServiceMessage.Finish = null;
 
     onLoad() {
         this.audioContainer = this.nodeAudioContainer.getComponent(AudioContainer);
-        this.compPlate = this.nodePlate.getComponent(Plate);
         this.winningResult = this.nodeWinning.getComponent(WinningResult);
         super.onLoad();
     }
@@ -57,8 +50,8 @@ export default class Game extends GameComponent {
         settlementResult: gc.GameServiceMessage.TSettlementResult
     ) {
         if (result) {
-            this.compPlate.setDots(result as IResult);
-            await this.compPlate.openPlate(hasAnimation);
+            await this.gameResultAnimation(result, hasAnimation);
+
             this.winningResult.setSettlementResult(settlementResult);
             this.winningResult.show();
 
@@ -67,8 +60,9 @@ export default class Game extends GameComponent {
         }
     }
 
+    private async gameResultAnimation(result, animated) {}
+
     async renderCurrentFinish(currentFinish: gc.GameServiceMessage.Finish) {
-        this.currentFinish = currentFinish;
         if (!currentFinish || !this.enableFixHandleFinish) {
             return;
         }
@@ -93,21 +87,12 @@ export default class Game extends GameComponent {
         if (!firstJoinGameHistory) {
             return;
         }
-        const roundTime = firstJoinGameHistory.roundTime;
 
         const lastRound = firstJoinGameHistory.roundHistory as any;
         if (lastRound) {
             const { result, settlementResult } = lastRound;
             if (firstJoinGameHistory.animationHighlight) {
-                if (roundTime === 0) {
-                    await FunctionUtils.delay(1000);
-                    if (this.currentFinish) {
-                        return;
-                    }
-                    this.showResult(result, false, settlementResult);
-                } else {
-                    this.showResult(result, false, settlementResult);
-                }
+                this.showResult(result, false, settlementResult);
             }
         }
     }
