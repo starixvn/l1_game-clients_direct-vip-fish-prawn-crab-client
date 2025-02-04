@@ -874,9 +874,9 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 250,
+      "g": 223,
+      "b": 79,
       "a": 255
     },
     "_string": "0",
@@ -1059,9 +1059,9 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 250,
+      "g": 223,
+      "b": 79,
       "a": 255
     },
     "_string": "0",
@@ -1244,9 +1244,9 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 250,
+      "g": 223,
+      "b": 79,
       "a": 255
     },
     "_string": "0",
@@ -1430,6 +1430,7 @@
       "__id__": 0
     },
     "fileId": "83ZmmMirZBOIf3RM6uhJ94",
+    "instance": null,
     "targetOverrides": null
   }
 ]
