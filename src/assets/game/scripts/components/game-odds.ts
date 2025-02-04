@@ -11,6 +11,9 @@ export class GameOdd extends ObserverComponent {
 
     @render(gc.GameConfigs.GameConfigStore, (store) => store.odds)
     renderOdds(odds: any) {
+        if (!odds) {
+            return;
+        }
         Object.keys(odds).forEach((key) => {
             const node = this.labelContainer.getChildByName(key);
             const label = node.getComponent(Label);
