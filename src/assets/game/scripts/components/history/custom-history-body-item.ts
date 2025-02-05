@@ -4,6 +4,7 @@ import Observer from "observer";
 import BetHistoryBodyItem, {
     BetHistoryBodyItemType,
 } from "../../../../../extensions/shared-components/assets/game/bet-history/scripts/components/bet-history-body-item";
+import { DateTimeLabels } from "../../../../../extensions/shared-components/assets/shared/common-components/date-time-labels";
 import { RESULT_MAPPER } from "../../game-definitions";
 const { ccclass, property } = _decorator;
 const { render } = Observer;
@@ -15,6 +16,9 @@ export class CustomHistoryBodyItem extends BetHistoryBodyItem {
     @property(Node)
     betSample: Node = null;
 
+    @property(DateTimeLabels)
+    dateTimeLabels: DateTimeLabels = null;
+
     addNewBetDetail() {
         const node = instantiate(this.betSample);
         this.betContainer.addChild(node);
@@ -23,6 +27,8 @@ export class CustomHistoryBodyItem extends BetHistoryBodyItem {
 
     setData(data: BetHistoryBodyItemType) {
         super.setData(data);
+
+        this.dateTimeLabels.setTime(data.betHistoryLog.time);
 
         const history = data.betHistoryLog;
         const details = this.createBetDetail(history);
