@@ -1,5 +1,5 @@
-import { _decorator, Component, sp } from "cc";
-import { AnimationUtils } from "../../../../extensions/shared-components/assets/shared/utils";
+import { _decorator, Component, Node, sp } from "cc";
+import { AnimationUtils, ComponentUtils } from "../../../../extensions/shared-components/assets/shared/utils";
 import { GameResultItem } from "./game-result-item";
 const { ccclass, property } = _decorator;
 
@@ -18,11 +18,26 @@ export class GameAnimation extends Component {
     @property(sp.Skeleton)
     skeleton: sp.Skeleton = null;
 
+    @property(Node)
+    randomPositionContainer: Node = null;
+
+    onLoad() {
+        this.randomPositionContainer.active = false;
+    }
+
     setResult(result) {
         this.resultItem.setData(result);
     }
 
-    setRandomPosition(roundId: number) {}
+    setRandomPosition(roundId: number) {
+        const randomIndex = 0;
+        const randomContainer = this.randomPositionContainer.children[randomIndex];
+        this.resultItem.content.children.forEach((child, index) => {
+            const target = randomContainer.children[index];
+            child.position = ComponentUtils.convertPosition(child.parent, target);
+            child.scale = target.scale;
+        });
+    }
 
     playAnimationClosed() {
         this.skeleton.setAnimation(0, GameAnimationType.Closed, false);
