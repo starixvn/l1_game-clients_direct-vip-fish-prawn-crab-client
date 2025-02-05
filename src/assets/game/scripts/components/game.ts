@@ -23,19 +23,19 @@ const { observer, render } = Observer;
 export default class Game extends GameComponent {
     @property(ChipFlying)
     chipFlying: ChipFlying = null;
-    override namespace = settings.name;
-    override containerOptions = containerOptions;
 
     @property(Node)
     nodeAudioContainer: Node = null;
 
     @property(Node)
     nodeGameAnimation: Node = null;
-    gameAnimation: GameAnimation = null;
 
+    override namespace = settings.name;
+    override containerOptions = containerOptions;
     protected enableFixHandleFinish = true;
+
+    private gameAnimation: GameAnimation = null;
     private audioContainer: AudioContainer = null;
-    private soundWinChoice = ["odd", "even"];
 
     onLoad() {
         this.audioContainer = this.nodeAudioContainer.getComponent(AudioContainer);
@@ -49,10 +49,7 @@ export default class Game extends GameComponent {
         settlementResult: gc.GameServiceMessage.TSettlementResult
     ) {
         if (result) {
-            await this.gameResultAnimation(result, hasAnimation);
-
-            const winChoice = this.soundWinChoice.find((choice) => settlementResult[choice]);
-            this.playSound(`${winChoice}_wins_${gc.Translator.getLanguageId()}`);
+            this.gameResultAnimation(result, hasAnimation);
         }
     }
 
