@@ -8,12 +8,12 @@ export const settings = {
     name: "vipfishprawncrab",
     namespaces: ["Common", "VipFishPrawnCrab"],
     durations: {
-        wholeRound: 39,
+        wholeRound: 42,
         lockingBet: 5,
         placingBet: 30,
-        generatingResult: 1,
+        generatingResult: 3,
         showingResult: 6,
-        startRound: 2,
+        startRound: 3,
     },
     numberOfRoundHistory: 100,
 };
