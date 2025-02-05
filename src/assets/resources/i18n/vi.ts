@@ -40,6 +40,7 @@ export const languages = {
         "invalid_bet": "Cược không hợp lệ",
         "invalid_deal_hands": "Số lượng tay bài không hợp lệ.",
         "invalid_position": "Vị trí tay bài không đúng",
+        "invalid_stake_level": "Mức cược không hợp lệ.",
         "join_game": "Vào Bàn",
         "join_next_round": "Bạn vui lòng chờ hết ván nhé.",
         "maintenance_time": "Thời Gian Bảo Trì",
@@ -198,18 +199,14 @@ export const languages = {
         "win_loss": "Thắng Thua",
         "you_reach_max_win": "Bạn Đã Đạt Mức Tiền Thắng Tối Đa"
     },
-    "SeDie": {
-        "bet_option_red2": "2 Đỏ",
-        "bet_option_red3": "3 Đỏ",
-        "bet_option_red4": "4 Đỏ",
-        "bet_option_white3": "1 Đỏ",
-        "bet_option_white4": "4 Trắng",
-        "even_win": "CHẴN THẮNG",
-        "game_icon_name": "XÓC ĐĨA",
-        "game_name": "Xóc Đĩa",
-        "glossary_even": "Chẵn",
-        "glossary_odd": "Lẻ",
-        "odd_win": "LẺ THẮNG"
+    "VipFishPrawnCrab": {
+        "bet_option_crab": "Cua",
+        "bet_option_fish": "Cá",
+        "bet_option_gourd": "Bầu",
+        "bet_option_prawn": "Tôm",
+        "bet_option_rooster": "Gà",
+        "bet_option_stag": "Nai",
+        "game_name": "Bầu Cua VIP"
     }
 };
 

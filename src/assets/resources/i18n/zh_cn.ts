@@ -40,6 +40,7 @@ export const languages = {
         "invalid_bet": "无效投注",
         "invalid_deal_hands": "这数量手牌无效",
         "invalid_position": "无效位置",
+        "invalid_stake_level": "无效的赌注级别",
         "join_game": "加入游戏",
         "join_next_round": "您将在下一轮加入游戏。",
         "maintenance_time": "维护时间",
@@ -198,18 +199,14 @@ export const languages = {
         "win_loss": "赢 输",
         "you_reach_max_win": "您达到了最大胜利"
     },
-    "SeDie": {
-        "bet_option_red2": "2 红",
-        "bet_option_red3": "3 红",
-        "bet_option_red4": "4 红",
-        "bet_option_white3": "1 红",
-        "bet_option_white4": "4 白",
-        "even_win": "EVEN WINS",
-        "game_icon_name": "色碟",
-        "game_name": "色碟",
-        "glossary_even": "双",
-        "glossary_odd": "单",
-        "odd_win": "ODD WINS"
+    "VipFishPrawnCrab": {
+        "bet_option_crab": "螃蟹",
+        "bet_option_fish": "鱼",
+        "bet_option_gourd": "葫芦",
+        "bet_option_prawn": "虾",
+        "bet_option_rooster": "公鸡",
+        "bet_option_stag": "麈",
+        "game_name": "VIP 鱼虾蟹"
     }
 };
 

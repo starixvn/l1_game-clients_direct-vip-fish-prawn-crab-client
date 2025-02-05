@@ -1,18 +1,11 @@
 {
-    "lobbyNames": {
-        "en": "SE DIE",
-        "id": "SE DIE",
-        "th": "SE DIE",
-        "vi": "XÓC ĐĨA",
-        "zh_cn": "色碟",
-        "zh_tw": "色碟"
-    },
+    "lobbyNames": {},
     "gameNames": {
-        "en": "Se Die",
-        "id": "Se Die",
-        "th": "Se Die",
-        "vi": "Xóc Đĩa",
-        "zh_cn": "色碟",
-        "zh_tw": "色碟"
+        "en": "VIP Fish Prawn Crab",
+        "id": "VIP Ikan Udang Kepiting",
+        "th": "VIP  ปลา กุ้ง ปู",
+        "vi": "Bầu Cua VIP",
+        "zh_cn": "VIP 鱼虾蟹",
+        "zh_tw": "VIP 魚蝦蟹"
     }
 }

@@ -40,6 +40,7 @@ export const languages = {
         "invalid_bet": "無效投注",
         "invalid_deal_hands": "這數量手牌無效",
         "invalid_position": "無效位置",
+        "invalid_stake_level": "無效的賭注級別",
         "join_game": "加入遊戲",
         "join_next_round": "您將在下一輪加入遊戲。",
         "maintenance_time": "維護時間",
@@ -198,18 +199,14 @@ export const languages = {
         "win_loss": "贏 輸",
         "you_reach_max_win": "您達到了最大勝利"
     },
-    "SeDie": {
-        "bet_option_red2": "2 紅",
-        "bet_option_red3": "3 紅",
-        "bet_option_red4": "4 紅",
-        "bet_option_white3": "1 紅",
-        "bet_option_white4": "4 白",
-        "even_win": "EVEN WINS",
-        "game_icon_name": "色碟",
-        "game_name": "色碟",
-        "glossary_even": "雙",
-        "glossary_odd": "單",
-        "odd_win": "ODD WINS"
+    "VipFishPrawnCrab": {
+        "bet_option_crab": "螃蟹",
+        "bet_option_fish": "魚",
+        "bet_option_gourd": "葫蘆",
+        "bet_option_prawn": "蝦",
+        "bet_option_rooster": "公雞",
+        "bet_option_stag": "麈",
+        "game_name": "VIP 魚蝦蟹"
     }
 };
 

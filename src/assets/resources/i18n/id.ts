@@ -40,6 +40,7 @@ export const languages = {
         "invalid_bet": "Taruhan Tidak Valid",
         "invalid_deal_hands": "Jumlah Tangan tidak valid",
         "invalid_position": "Posisi Tidak Valid",
+        "invalid_stake_level": "Level Taruhan Tidak Valid",
         "join_game": "Gabung\nPermainan",
         "join_next_round": "Anda akan bergabung dalam permainan di babak berikutnya.",
         "maintenance_time": "WAKTU PEMELIHARAAN",
@@ -84,7 +85,7 @@ export const languages = {
         "message_limit_bet_updated": "Permainan %{gameName} (#%{gameRoundId})\n\nGagal memasang taruhan! Batas taruhan Anda telah diperbarui, silakan coba lagi. (%{errorCode})",
         "message_limitbet_exceeded": "Permainan %{gameName} (#%{gameRoundId})\n\nGagal memasang taruhan! Taruhan Anda telah melampaui batas taruhan Anda, silakan coba lagi. (%{errorCode})",
         "message_login_fail_place_bet": "Permainan %{gameName} (#%{gameRoundId})\n\nGagal memasang taruhan! Nama login atau kata sandi salah.",
-        "message_lose_limit_hit": "Permainan %{gameName} (#%{gameRoundId})\n\nGagal memasang taruhan! Batas Kekalahan. Silakan hubungi upline Anda, terima kasih.\n(%{errorCode})",
+        "message_lose_limit_hit": "Permainan %{gameName} (#%{gameRoundId})\n\nGagal memasang taruhan! Batas Kekalahan. Silakan hubungi upline Anda, terima kasih. \n(%{errorCode})",
         "message_lost_game_connection": "%{gameName}\n\nKoneksi tidak stabil, silakan periksa.",
         "message_maxbet_of_oneofchoice_reached": "Salah satu pilihan taruhan Anda telah melampaui batas taruhan.",
         "message_min_bet_notice": "Taruhan minimum untuk opsi ini adalah %{minBet}",
@@ -114,12 +115,12 @@ export const languages = {
         "message_sys_maintenance": "Permainan sedang dalam pemeliharaan.",
         "message_sys_maintenance_place_bet": "Permainan %{gameName} (#%{gameRoundId})\n\nGagal memasang taruhan! Permainan sedang dalam pemeliharaan.",
         "message_unauthorized": "Tidak sah.",
-        "message_unavailable_game": "Permainan %{gameName} (#%{gameRoundId})\n\nPermainan tidak tersedia saat ini. Silakan hubungi CSD untuk lebih lanjut, terima kasih.\n(%{errorCode})",
+        "message_unavailable_game": "Permainan %{gameName} (#%{gameRoundId})\n\nPermainan tidak tersedia saat ini. Silakan hubungi CSD untuk lebih lanjut, terima kasih. \n(%{errorCode})",
         "message_under_maintain": "SITUS DALAM PEMELIHARAAN. SILAKAN KEMBALI LAGI.",
         "message_user_not_found": "Pengguna tidak ditemukan. (%{errorCode})",
         "message_user_notfound_place_bet": "Permainan %{gameName} (#%{gameRoundId})\n\nGagal memasang taruhan! Pengguna tidak ditemukan. (%{errorCode})",
         "message_void_running_ticket": "Taruhan dibatalkan karena masalah teknis. Silakan coba permainan lagi.",
-        "message_win_limit_hit": "Permainan %{gameName} (#%{gameRoundId})\n\nGagal memasang taruhan! Batas Kemenganan. Silakan hubungi upline Anda, terima kasih.\n(%{errorCode})",
+        "message_win_limit_hit": "Permainan %{gameName} (#%{gameRoundId})\n\nGagal memasang taruhan! Batas Kemenganan. Silakan hubungi upline Anda, terima kasih. \n(%{errorCode})",
         "min_bet_hand": "Taruhan minimum untuk tangan ini adalah %{minBet}",
         "multiplier_time": "Peningkat Kemenangan!",
         "name_invalid": "Nama panggilan yang dimasukkan tidak valid, harap coba lagi.",
@@ -198,18 +199,14 @@ export const languages = {
         "win_loss": "Menang Kalah",
         "you_reach_max_win": "Anda mencapai Maksimal Menang"
     },
-    "SeDie": {
-        "bet_option_red2": "2 Merah",
-        "bet_option_red3": "3 Merah",
-        "bet_option_red4": "4 Merah",
-        "bet_option_white3": "1 Merah",
-        "bet_option_white4": "4 Putih",
-        "even_win": "GENAP MENANG",
-        "game_icon_name": "SE DIE",
-        "game_name": "Se Die",
-        "glossary_even": "Genap",
-        "glossary_odd": "Ganjil",
-        "odd_win": "GANJIL MENANG"
+    "VipFishPrawnCrab": {
+        "bet_option_crab": "KEPITING",
+        "bet_option_fish": "IKAN",
+        "bet_option_gourd": "KUNDUR",
+        "bet_option_prawn": "UDANG",
+        "bet_option_rooster": "AYAM JANTAN",
+        "bet_option_stag": "Rusa Jantan",
+        "game_name": "VIP Ikan Udang Kepiting"
     }
 };
 

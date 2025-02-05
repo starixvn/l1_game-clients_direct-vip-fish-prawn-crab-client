@@ -40,6 +40,7 @@ export const languages = {
         "invalid_bet": "Invalid Bet",
         "invalid_deal_hands": "The number of Hands is invalid",
         "invalid_position": "Invalid Position",
+        "invalid_stake_level": "Invalid Stake level",
         "join_game": "Join Game",
         "join_next_round": "You will join the game next round.",
         "maintenance_time": "Maintenance time",
@@ -198,18 +199,14 @@ export const languages = {
         "win_loss": "Win Loss",
         "you_reach_max_win": "You reached the max win"
     },
-    "SeDie": {
-        "bet_option_red2": "2 Red",
-        "bet_option_red3": "3 Red",
-        "bet_option_red4": "4 Red",
-        "bet_option_white3": "1 Red",
-        "bet_option_white4": "4 White",
-        "even_win": "EVEN WINS",
-        "game_icon_name": "SE DIE",
-        "game_name": "Se Die",
-        "glossary_even": "Even",
-        "glossary_odd": "Odd",
-        "odd_win": "ODD WINS"
+    "VipFishPrawnCrab": {
+        "bet_option_crab": "Crab",
+        "bet_option_fish": "Fish",
+        "bet_option_gourd": "Gourd",
+        "bet_option_prawn": "Prawn",
+        "bet_option_rooster": "Rooster",
+        "bet_option_stag": "Stag",
+        "game_name": "VIP Fish Prawn Crab"
     }
 };
 

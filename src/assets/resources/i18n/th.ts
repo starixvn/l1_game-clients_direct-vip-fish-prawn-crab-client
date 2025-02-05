@@ -40,6 +40,7 @@ export const languages = {
         "invalid_bet": "เดิมพันไม่ถูกต้อง",
         "invalid_deal_hands": "จำนวนมือไม่ถูกต้อง",
         "invalid_position": "ตำแหน่งไม่ถูกต้อง",
+        "invalid_stake_level": "ระดับเงินเดิมพันไม่ถูกต้อง",
         "join_game": "เข้าเกมส์",
         "join_next_round": "คุณจะเข้าร่วมเกมในรอบถัดไป",
         "maintenance_time": "เวลาปรับปรุงระบบ",
@@ -198,18 +199,14 @@ export const languages = {
         "win_loss": "ชนะ แพ้",
         "you_reach_max_win": "คุณถึงยอดชนะสูงสุด"
     },
-    "SeDie": {
-        "bet_option_red2": "2 แดง",
-        "bet_option_red3": "3 แดง",
-        "bet_option_red4": "4 แดง",
-        "bet_option_white3": "1 แดง",
-        "bet_option_white4": "4 ขาว",
-        "even_win": "EVEN WINS",
-        "game_icon_name": "SE DIE",
-        "game_name": "Se Die",
-        "glossary_even": "คู่",
-        "glossary_odd": "คี่",
-        "odd_win": "ODD WINS"
+    "VipFishPrawnCrab": {
+        "bet_option_crab": "ปู",
+        "bet_option_fish": "ปลา",
+        "bet_option_gourd": "น้ำเต้า",
+        "bet_option_prawn": "กุ้ง",
+        "bet_option_rooster": "ไก่ชน",
+        "bet_option_stag": "กวาง",
+        "game_name": "VIP  ปลา กุ้ง ปู"
     }
 };
 
