@@ -9,15 +9,16 @@ export class GameOdd extends ObserverComponent {
     @property(Node)
     labelContainer: Node = null;
 
-    @render(gc.GameConfigs.GameConfigStore, (store) => store.odds)
-    renderOdds(odds: any) {
+    @render(gc.Rounds.RoundStore, (store) => store.roundOdds)
+    renderOdds(roundOdds: gc.Rounds.RoundOdds) {
+        const { odds, fractional } = roundOdds;
         if (!odds) {
             return;
         }
         Object.keys(odds).forEach((key) => {
             const node = this.labelContainer.getChildByName(key);
             const label = node.getComponent(Label);
-            label.string = `1:${odds[key]}`;
+            label.string = gc.FormatUtils.formatOdds(odds[key], fractional);
         });
     }
 }
