@@ -10,6 +10,7 @@ import Observer from "observer";
 
 import { siteConfigs } from "../../../scripts/site-configs";
 import { containerOptions, settings } from "../game-settings";
+import { GameAnimation } from "./game-animation";
 
 startGame(settings.name, containerOptions, siteConfigs, settings.namespaces);
 const { Rounds, RoundHistories } = gc;
@@ -28,12 +29,17 @@ export default class Game extends GameComponent {
     @property(Node)
     nodeAudioContainer: Node = null;
 
+    @property(Node)
+    nodeGameAnimation: Node = null;
+    gameAnimation: GameAnimation = null;
+
     protected enableFixHandleFinish = true;
     private audioContainer: AudioContainer = null;
     private soundWinChoice = ["odd", "even"];
 
     onLoad() {
         this.audioContainer = this.nodeAudioContainer.getComponent(AudioContainer);
+        this.gameAnimation = this.nodeGameAnimation.getComponent(GameAnimation);
         super.onLoad();
     }
 
@@ -50,18 +56,32 @@ export default class Game extends GameComponent {
         }
     }
 
-    private async gameResultAnimation(result, animated) {}
+    handleStartRound(isStartRound: boolean) {
+        if (isStartRound) {
+            this.gameAnimation.playAnimationShake();
+        }
+    }
+
+    private async gameResultAnimation(result, animated) {
+        this.gameAnimation.setResult(result);
+        if (animated) {
+            await this.gameAnimation.playAnimationOpen();
+        } else {
+            this.gameAnimation.playAnimationOpened();
+        }
+    }
 
     async renderCurrentFinish(currentFinish: gc.GameServiceMessage.Finish) {
         if (!currentFinish || !this.enableFixHandleFinish) {
             return;
         }
-        const { result, settlementResult } = currentFinish as any;
+        const { result, settlementResult, roundId } = currentFinish as any;
 
         if (!this.isValidResult(result, settlementResult)) {
             return;
         }
 
+        this.gameAnimation.setRandomPosition(roundId);
         this.showResult(result, true, settlementResult).then(() => {
             this.finishShowResult(result, settlementResult);
             this.chipFlying.callActionPayChips();
@@ -77,9 +97,14 @@ export default class Game extends GameComponent {
 
         const lastRound = firstJoinGameHistory.roundHistory as any;
         if (lastRound) {
-            const { result, settlementResult } = lastRound;
+            const { result, settlementResult, roundId } = lastRound;
+            this.gameAnimation.setRandomPosition(roundId);
             if (firstJoinGameHistory.animationHighlight) {
                 this.showResult(result, false, settlementResult);
+            }
+
+            if (firstJoinGameHistory.staticHighlight) {
+                this.gameAnimation.playAnimationClosed();
             }
         }
     }
