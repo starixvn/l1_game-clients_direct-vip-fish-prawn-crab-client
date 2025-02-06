@@ -13,8 +13,8 @@ export class ResultItemMultiplier extends ObserverComponent {
     @property(SpriteAtlas)
     atlas: SpriteAtlas = null;
 
-    @property(String)
-    suffix: string = "";
+    @property
+    suffix = "";
 
     @render(ResultMultiplierStore, (store) => store.multipliers)
     setResult(multipliers: any) {
