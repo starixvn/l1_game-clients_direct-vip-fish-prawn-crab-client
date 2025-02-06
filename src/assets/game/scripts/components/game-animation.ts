@@ -1,5 +1,6 @@
 import { _decorator, Component, Node, sp } from "cc";
 import { AnimationUtils, ComponentUtils } from "../../../../extensions/shared-components/assets/shared/utils";
+import { settings } from "../game-settings";
 import { GameResultItem } from "./game-result-item";
 const { ccclass, property } = _decorator;
 
@@ -45,11 +46,11 @@ export class GameAnimation extends Component {
     }
 
     async playAnimationOpen() {
-        await AnimationUtils.playSpine(this.skeleton, GameAnimationType.Open, false);
+        await AnimationUtils.playSpine(this.skeleton, GameAnimationType.Open, false, settings.durations.generatingResult);
     }
 
     playAnimationShake() {
-        this.skeleton.setAnimation(0, GameAnimationType.Shake, false);
+        AnimationUtils.playSpine(this.skeleton, GameAnimationType.Shake, false, settings.durations.startRound);
     }
 
     playAnimationOpened() {
