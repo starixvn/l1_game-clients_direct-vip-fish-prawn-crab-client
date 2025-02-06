@@ -5,7 +5,7 @@ import BetHistoryBodyItem, {
     BetHistoryBodyItemType,
 } from "../../../../../extensions/shared-components/assets/game/bet-history/scripts/components/bet-history-body-item";
 import { DateTimeLabels } from "../../../../../extensions/shared-components/assets/shared/common-components/date-time-labels";
-import { RESULT_MAPPER } from "../../game-definitions";
+import { calculateMultiplier, RESULT_MAPPER } from "../../game-definitions";
 const { ccclass, property } = _decorator;
 const { render } = Observer;
 @ccclass("CustomHistoryBodyItem")
@@ -94,18 +94,12 @@ export class CustomHistoryBodyItem extends BetHistoryBodyItem {
     }
 
     private createBetDetail(history: any) {
-        const diceResults = [history.result.dice1, history.result.dice2, history.result.dice3];
-
-        const diceCount = diceResults.reduce((acc, curr) => {
-            const choice = RESULT_MAPPER[curr];
-            acc[choice] = (acc[choice] || 0) + 1;
-            return acc;
-        }, {} as Record<string, number>);
+        const multipliers = calculateMultiplier(history.result);
 
         const details = RESULT_MAPPER.reduce((acc, choice) => {
             if (history[choice] > 0) {
-                const appears = diceCount[choice] ?? 1;
-                const oddType = appears === 1 ? "single" : appears === 2 ? "double" : "triple";
+                const multiplier = multipliers[choice] ?? 1;
+                const oddType = multiplier === 1 ? "single" : multiplier === 2 ? "double" : "triple";
                 acc[choice] = {
                     odds: history.odds[oddType],
                     bet: history[choice] || 0,
