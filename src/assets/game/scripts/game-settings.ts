@@ -5,7 +5,7 @@ import { sharedContainer } from "../../scripts/shared-container";
 
 export const settings = {
     id: 26,
-    name: "vipfishprawncrab",
+    name: "VipFishPrawnCrab",
     namespaces: ["Common", "VipFishPrawnCrab"],
     durations: {
         wholeRound: 42,

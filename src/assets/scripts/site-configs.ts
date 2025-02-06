@@ -24,7 +24,7 @@ const defaultConfig: gc.Configs.SiteConfigs = {
         proxyPath: "vipfishprawncrab",
         route: "vipfishprawncrab",
     },
-    mainObserverNamespace: "vipfishprawncrab",
+    mainObserverNamespace: "VipFishPrawnCrab",
     tolgeeUrl: "",
     storagePrefixKey: "portrait_vipfishprawncrab",
     backgroundNoTranslate: true,
