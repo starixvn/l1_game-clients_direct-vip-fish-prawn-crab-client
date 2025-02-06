@@ -17,8 +17,10 @@ export class GameOdd extends ObserverComponent {
         }
         Object.keys(odds).forEach((key) => {
             const node = this.labelContainer.getChildByName(key);
-            const label = node.getComponent(Label);
-            label.string = gc.FormatUtils.formatOdds(odds[key], fractional);
+            if (node) {
+                const label = node.getComponent(Label);
+                label.string = gc.FormatUtils.formatOdds(odds[key], fractional);
+            }
         });
     }
 }
