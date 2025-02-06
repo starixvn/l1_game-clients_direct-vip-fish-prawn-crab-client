@@ -26,6 +26,7 @@ export class GameAnimation extends Component {
     }
 
     setResult(result) {
+        this.resultItem.node.active = true;
         this.resultItem.setData(result);
     }
 

@@ -308,7 +308,7 @@
     "_debugMesh": false,
     "_debugBones": false,
     "_debugSlots": false,
-    "_enableBatch": false,
+    "_enableBatch": true,
     "loop": false,
     "_id": ""
   },
@@ -556,7 +556,7 @@
         "__id__": 32
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 38
@@ -1696,8 +1696,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": -57.543000000000006,
+      "x": 6.196,
+      "y": -58.714,
       "z": 0
     },
     "_lrot": {
@@ -1779,7 +1779,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 2,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -1787,7 +1787,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_useGrayscale": false,
     "_atlas": null,
     "_id": ""
