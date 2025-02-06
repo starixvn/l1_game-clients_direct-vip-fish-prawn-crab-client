@@ -21,12 +21,13 @@ export class GameScoreBoard extends Component {
 
     render(histories: any[]) {
         this.content.destroyAllChildren();
-        histories.forEach((history) => {
+        histories.forEach((history, index) => {
             const node = instantiate(this.itemPrefab);
             this.content.addChild(node);
 
             const resultItem = node.getComponent(GameResultItem);
-            resultItem.setData(history.result);
+            const lastItem = index === histories.length - 1;
+            resultItem.setData(history.result, lastItem);
         });
 
         this.scrollToEnd();
