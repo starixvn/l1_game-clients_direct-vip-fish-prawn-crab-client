@@ -8,7 +8,9 @@ import GameComponent from "db://shared-components/game/scripts/components/game-c
 import { startGame } from "db://shared-components/shared/scripts/startup";
 import Observer from "observer";
 
+import { AnimationUtils } from "../../../../extensions/shared-components/assets/shared/utils";
 import { siteConfigs } from "../../../scripts/site-configs";
+import { RESULT_MAPPER } from "../game-definitions";
 import { containerOptions, settings } from "../game-settings";
 import { GameAnimation } from "./game-animation";
 
@@ -49,7 +51,7 @@ export default class Game extends GameComponent {
         settlementResult: gc.GameServiceMessage.TSettlementResult
     ) {
         if (result) {
-            this.gameResultAnimation(result, hasAnimation);
+            await this.gameResultAnimation(result, hasAnimation);
         }
     }
 
@@ -113,5 +115,16 @@ export default class Game extends GameComponent {
         } else if (roundState === Rounds.ROUND_STATE.SHOW_RESULT) {
             this.audioContainer.updateVolumeMusicSource(1, 3);
         }
+    }
+
+    async playResulAudio(result) {
+        const choices = Object.values(result).map((value: number) => RESULT_MAPPER[value]);
+        const languageId = gc.Translator.getLanguageId();
+        try {
+            for (const choice of choices) {
+                this.playSound(`${choice}_win_${languageId}`);
+                await AnimationUtils.delayTime(0.2);
+            }
+        } catch (e) {}
     }
 }
