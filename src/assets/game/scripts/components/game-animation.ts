@@ -2,7 +2,7 @@ import { _decorator, Component, Node, sp } from "cc";
 import { AnimationUtils, ComponentUtils } from "../../../../extensions/shared-components/assets/shared/utils";
 import { settings } from "../game-settings";
 import { GameResultItem } from "./game-result-item";
-const { ccclass, property } = _decorator;
+const { ccclass, property, executeInEditMode } = _decorator;
 
 export enum GameAnimationType {
     Open = "open",
@@ -32,7 +32,8 @@ export class GameAnimation extends Component {
     }
 
     setRandomPosition(roundId: number) {
-        const randomIndex = 0;
+        const randomIndex = roundId % this.randomPositionContainer.children.length;
+        console.log(randomIndex);
         const randomContainer = this.randomPositionContainer.children[randomIndex];
         this.resultItem.content.children.forEach((child, index) => {
             const target = randomContainer.children[index];

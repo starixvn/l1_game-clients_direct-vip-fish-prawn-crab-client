@@ -146,13 +146,13 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{154,161}</string>
+                <string>{201,200}</string>
                 <key>spriteSourceSize</key>
-                <string>{154,161}</string>
+                <string>{201,200}</string>
                 <key>textureRect</key>
-                <string>{{3,478},{154,161}}</string>
+                <string>{{3,478},{201,200}}</string>
                 <key>textureRotated</key>
-                <true/>
+                <false/>
             </dict>
             <key>dice_fish.png</key>
             <dict>
@@ -161,13 +161,13 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{154,161}</string>
+                <string>{201,200}</string>
                 <key>spriteSourceSize</key>
-                <string>{154,161}</string>
+                <string>{201,200}</string>
                 <key>textureRect</key>
-                <string>{{3,634},{154,161}}</string>
+                <string>{{3,680},{201,200}}</string>
                 <key>textureRotated</key>
-                <false/>
+                <true/>
             </dict>
             <key>dice_gourd.png</key>
             <dict>
@@ -176,13 +176,13 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{154,161}</string>
+                <string>{201,200}</string>
                 <key>spriteSourceSize</key>
-                <string>{154,161}</string>
+                <string>{201,200}</string>
                 <key>textureRect</key>
-                <string>{{3,797},{154,161}}</string>
+                <string>{{205,680},{201,200}}</string>
                 <key>textureRotated</key>
-                <false/>
+                <true/>
             </dict>
             <key>dice_prawn.png</key>
             <dict>
@@ -191,11 +191,11 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{154,161}</string>
+                <string>{201,200}</string>
                 <key>spriteSourceSize</key>
-                <string>{154,161}</string>
+                <string>{201,200}</string>
                 <key>textureRect</key>
-                <string>{{159,634},{154,161}}</string>
+                <string>{{407,577},{201,200}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -206,13 +206,13 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{154,161}</string>
+                <string>{201,200}</string>
                 <key>spriteSourceSize</key>
-                <string>{154,161}</string>
+                <string>{201,200}</string>
                 <key>textureRect</key>
-                <string>{{159,797},{154,161}}</string>
+                <string>{{407,779},{201,200}}</string>
                 <key>textureRotated</key>
-                <false/>
+                <true/>
             </dict>
             <key>dice_stag.png</key>
             <dict>
@@ -221,11 +221,11 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{154,161}</string>
+                <string>{201,200}</string>
                 <key>spriteSourceSize</key>
-                <string>{154,161}</string>
+                <string>{201,200}</string>
                 <key>textureRect</key>
-                <string>{{315,524},{154,161}}</string>
+                <string>{{609,779},{201,200}}</string>
                 <key>textureRotated</key>
                 <true/>
             </dict>
@@ -543,7 +543,7 @@
             <key>size</key>
             <string>{1024,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:723dc3288c3f788dfee66faa825de249:a2dd0a5e0ad1a8e77c55cb1e799308fa:02a452150431e4fb3dc3c23c8a3eb8eb$</string>
+            <string>$TexturePacker:SmartUpdate:28c6c0faa7cd4274ec7a0e644e6901bd:a08f1208070f8e24fb7c9c3f522e59e4:02a452150431e4fb3dc3c23c8a3eb8eb$</string>
             <key>textureFileName</key>
             <string>game-atlas.webp</string>
         </dict>
