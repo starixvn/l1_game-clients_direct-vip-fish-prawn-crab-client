@@ -11319,7 +11319,7 @@
     "__prefab": {
       "__id__": 499
     },
-    "_resizeMode": 2,
+    "_resizeMode": 1,
     "_layoutType": 3,
     "_cellSize": {
       "__type__": "cc.Size",
