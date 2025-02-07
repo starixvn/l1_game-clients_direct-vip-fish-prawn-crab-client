@@ -3,5 +3,185 @@
         "bundle": "resources",
         "path": "shake",
         "isLazyLoad": true
+    },
+    "win_stag_zh_cn": {
+        "bundle": "resources",
+        "path": "result/win_stag_zh_cn",
+        "isLazyLoad": true
+    },
+    "win_stag_zh_tw": {
+        "bundle": "resources",
+        "path": "result/win_stag_zh_tw",
+        "isLazyLoad": true
+    },
+    "win_stag_en": {
+        "bundle": "resources",
+        "path": "result/win_stag_en",
+        "isLazyLoad": true
+    },
+    "win_stag_id": {
+        "bundle": "resources",
+        "path": "result/win_stag_id",
+        "isLazyLoad": true
+    },
+    "win_stag_th": {
+        "bundle": "resources",
+        "path": "result/win_stag_th",
+        "isLazyLoad": true
+    },
+    "win_stag_vi": {
+        "bundle": "resources",
+        "path": "result/win_stag_vi",
+        "isLazyLoad": true
+    },
+    "win_gourd_zh_cn": {
+        "bundle": "resources",
+        "path": "result/win_gourd_zh_cn",
+        "isLazyLoad": true
+    },
+    "win_gourd_zh_tw": {
+        "bundle": "resources",
+        "path": "result/win_gourd_zh_tw",
+        "isLazyLoad": true
+    },
+    "win_gourd_en": {
+        "bundle": "resources",
+        "path": "result/win_gourd_en",
+        "isLazyLoad": true
+    },
+    "win_gourd_id": {
+        "bundle": "resources",
+        "path": "result/win_gourd_id",
+        "isLazyLoad": true
+    },
+    "win_gourd_th": {
+        "bundle": "resources",
+        "path": "result/win_gourd_th",
+        "isLazyLoad": true
+    },
+    "win_gourd_vi": {
+        "bundle": "resources",
+        "path": "result/win_gourd_vi",
+        "isLazyLoad": true
+    },
+    "win_rooster_zh_cn": {
+        "bundle": "resources",
+        "path": "result/win_rooster_zh_cn",
+        "isLazyLoad": true
+    },
+    "win_rooster_zh_tw": {
+        "bundle": "resources",
+        "path": "result/win_rooster_zh_tw",
+        "isLazyLoad": true
+    },
+    "win_rooster_en": {
+        "bundle": "resources",
+        "path": "result/win_rooster_en",
+        "isLazyLoad": true
+    },
+    "win_rooster_id": {
+        "bundle": "resources",
+        "path": "result/win_rooster_id",
+        "isLazyLoad": true
+    },
+    "win_rooster_th": {
+        "bundle": "resources",
+        "path": "result/win_rooster_th",
+        "isLazyLoad": true
+    },
+    "win_rooster_vi": {
+        "bundle": "resources",
+        "path": "result/win_rooster_vi",
+        "isLazyLoad": true
+    },
+    "win_fish_zh_cn": {
+        "bundle": "resources",
+        "path": "result/win_fish_zh_cn",
+        "isLazyLoad": true
+    },
+    "win_fish_zh_tw": {
+        "bundle": "resources",
+        "path": "result/win_fish_zh_tw",
+        "isLazyLoad": true
+    },
+    "win_fish_en": {
+        "bundle": "resources",
+        "path": "result/win_fish_en",
+        "isLazyLoad": true
+    },
+    "win_fish_id": {
+        "bundle": "resources",
+        "path": "result/win_fish_id",
+        "isLazyLoad": true
+    },
+    "win_fish_th": {
+        "bundle": "resources",
+        "path": "result/win_fish_th",
+        "isLazyLoad": true
+    },
+    "win_fish_vi": {
+        "bundle": "resources",
+        "path": "result/win_fish_vi",
+        "isLazyLoad": true
+    },
+    "win_crab_zh_cn": {
+        "bundle": "resources",
+        "path": "result/win_crab_zh_cn",
+        "isLazyLoad": true
+    },
+    "win_crab_zh_tw": {
+        "bundle": "resources",
+        "path": "result/win_crab_zh_tw",
+        "isLazyLoad": true
+    },
+    "win_crab_en": {
+        "bundle": "resources",
+        "path": "result/win_crab_en",
+        "isLazyLoad": true
+    },
+    "win_crab_id": {
+        "bundle": "resources",
+        "path": "result/win_crab_id",
+        "isLazyLoad": true
+    },
+    "win_crab_th": {
+        "bundle": "resources",
+        "path": "result/win_crab_th",
+        "isLazyLoad": true
+    },
+    "win_crab_vi": {
+        "bundle": "resources",
+        "path": "result/win_crab_vi",
+        "isLazyLoad": true
+    },
+    "win_prawn_zh_cn": {
+        "bundle": "resources",
+        "path": "result/win_prawn_zh_cn",
+        "isLazyLoad": true
+    },
+    "win_prawn_zh_tw": {
+        "bundle": "resources",
+        "path": "result/win_prawn_zh_tw",
+        "isLazyLoad": true
+    },
+    "win_prawn_en": {
+        "bundle": "resources",
+        "path": "result/win_prawn_en",
+        "isLazyLoad": true
+    },
+    "win_prawn_id": {
+        "bundle": "resources",
+        "path": "result/win_prawn_id",
+        "isLazyLoad": true
+    },
+    "win_prawn_th": {
+        "bundle": "resources",
+        "path": "result/win_prawn_th",
+        "isLazyLoad": true
+    },
+    "win_prawn_vi": {
+        "bundle": "resources",
+        "path": "result/win_prawn_vi",
+        "isLazyLoad": true
     }
 }

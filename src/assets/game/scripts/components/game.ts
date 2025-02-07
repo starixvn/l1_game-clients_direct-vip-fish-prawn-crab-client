@@ -82,6 +82,7 @@ export default class Game extends GameComponent {
 
         this.gameAnimation.setRandomPosition(roundId);
         this.showResult(result, true, settlementResult).then(() => {
+            this.playResultAudio(result);
             this.finishShowResult(result, settlementResult);
             this.chipFlying.callActionPayChips();
         });
@@ -117,13 +118,13 @@ export default class Game extends GameComponent {
         }
     }
 
-    async playResulAudio(result) {
+    async playResultAudio(result) {
         const choices = Object.values(result).map((value: number) => RESULT_MAPPER[value]);
         const languageId = gc.Translator.getLanguageId();
         try {
             for (const choice of choices) {
-                this.playSound(`${choice}_win_${languageId}`);
-                await AnimationUtils.delayTime(0.2);
+                this.playSound(`win_${choice}_${languageId}`);
+                await AnimationUtils.delayTime(0.4);
             }
         } catch (e) {}
     }
