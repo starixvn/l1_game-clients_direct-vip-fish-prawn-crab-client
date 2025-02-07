@@ -33,8 +33,8 @@ export class GameAnimation extends Component {
 
     setRandomPosition(roundId: number) {
         const randomIndex = roundId % this.randomPositionContainer.children.length;
-        console.log(randomIndex);
         const randomContainer = this.randomPositionContainer.children[randomIndex];
+        console.log(randomContainer.name);
         this.resultItem.content.children.forEach((child, index) => {
             const target = randomContainer.children[index];
             child.position = ComponentUtils.convertPosition(child.parent, target);
