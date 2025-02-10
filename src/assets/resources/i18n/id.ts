@@ -200,11 +200,11 @@ export const languages = {
         "you_reach_max_win": "Anda mencapai Maksimal Menang"
     },
     "VipFishPrawnCrab": {
-        "bet_option_crab": "KEPITING",
-        "bet_option_fish": "IKAN",
-        "bet_option_gourd": "KUNDUR",
-        "bet_option_prawn": "UDANG",
-        "bet_option_rooster": "AYAM JANTAN",
+        "bet_option_crab": "Kepiting",
+        "bet_option_fish": "Ikan",
+        "bet_option_gourd": "Kundur",
+        "bet_option_prawn": "Udang",
+        "bet_option_rooster": "Ayam jantan",
         "bet_option_stag": "Rusa Jantan",
         "game_name": "VIP Ikan Udang Kepiting"
     }
