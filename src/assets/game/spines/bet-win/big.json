@@ -1,52 +1,53 @@
 {
-"skeleton": { "hash": "q1q7zuhaYNO+aBTUcZ+BliayFf0", "spine": "3.8.99", "x": -321, "y": -321, "width": 642, "height": 642 },
+"skeleton": { "hash": "V4gJX5FteDikpC2BYQ7QXJrZl8Y", "spine": "3.8.99", "x": -378, "y": -672, "width": 756, "height": 1344 },
 "bones": [
 	{ "name": "root" },
 	{ "name": "big", "parent": "root" },
 	{ "name": "big-sequence", "parent": "big" }
 ],
 "slots": [
+	{ "name": "mockup-baucua-828x1078", "bone": "root" },
 	{ "name": "big-mask", "bone": "big", "attachment": "big" },
-	{ "name": "big-sequence", "bone": "big-sequence", "attachment": "big-sequence/1_00", "blend": "additive" }
+	{ "name": "big-sequence", "bone": "big-sequence", "color": "ffffff00", "attachment": "big-sequence/1_00", "blend": "additive" }
 ],
 "skins": [
 	{
 		"name": "default",
 		"attachments": {
 			"big-mask": {
-				"big": { "width": 244, "height": 170 }
+				"big": { "width": 242, "height": 282 }
 			},
 			"big-sequence": {
-				"big-sequence/1_00": { "width": 642, "height": 642 },
-				"big-sequence/1_01": { "width": 642, "height": 642 },
-				"big-sequence/1_02": { "width": 642, "height": 642 },
-				"big-sequence/1_03": { "width": 642, "height": 642 },
-				"big-sequence/1_04": { "width": 642, "height": 642 },
-				"big-sequence/1_05": { "width": 642, "height": 642 },
-				"big-sequence/1_06": { "width": 642, "height": 642 },
-				"big-sequence/1_07": { "width": 642, "height": 642 },
-				"big-sequence/1_08": { "width": 642, "height": 642 },
-				"big-sequence/1_09": { "width": 642, "height": 642 },
-				"big-sequence/1_10": { "width": 642, "height": 642 },
-				"big-sequence/1_11": { "width": 642, "height": 642 },
-				"big-sequence/1_12": { "width": 642, "height": 642 },
-				"big-sequence/1_13": { "width": 642, "height": 642 },
-				"big-sequence/1_14": { "width": 642, "height": 642 },
-				"big-sequence/1_15": { "width": 642, "height": 642 },
-				"big-sequence/1_16": { "width": 642, "height": 642 },
-				"big-sequence/1_17": { "width": 642, "height": 642 },
-				"big-sequence/1_18": { "width": 642, "height": 642 },
-				"big-sequence/1_19": { "width": 642, "height": 642 },
-				"big-sequence/1_20": { "width": 642, "height": 642 },
-				"big-sequence/1_21": { "width": 642, "height": 642 },
-				"big-sequence/1_22": { "width": 642, "height": 642 },
-				"big-sequence/1_23": { "width": 642, "height": 642 },
-				"big-sequence/1_24": { "width": 642, "height": 642 },
-				"big-sequence/1_25": { "width": 642, "height": 642 },
-				"big-sequence/1_26": { "width": 642, "height": 642 },
-				"big-sequence/1_27": { "width": 642, "height": 642 },
-				"big-sequence/1_28": { "width": 642, "height": 642 },
-				"big-sequence/1_29": { "width": 642, "height": 642 }
+				"big-sequence/1_00": { "width": 756, "height": 1344 },
+				"big-sequence/1_01": { "width": 756, "height": 1344 },
+				"big-sequence/1_02": { "width": 756, "height": 1344 },
+				"big-sequence/1_03": { "width": 756, "height": 1344 },
+				"big-sequence/1_04": { "width": 756, "height": 1344 },
+				"big-sequence/1_05": { "width": 756, "height": 1344 },
+				"big-sequence/1_06": { "width": 756, "height": 1344 },
+				"big-sequence/1_07": { "width": 756, "height": 1344 },
+				"big-sequence/1_08": { "width": 756, "height": 1344 },
+				"big-sequence/1_09": { "width": 756, "height": 1344 },
+				"big-sequence/1_10": { "width": 756, "height": 1344 },
+				"big-sequence/1_11": { "width": 756, "height": 1344 },
+				"big-sequence/1_12": { "width": 756, "height": 1344 },
+				"big-sequence/1_13": { "width": 756, "height": 1344 },
+				"big-sequence/1_14": { "width": 756, "height": 1344 },
+				"big-sequence/1_15": { "width": 756, "height": 1344 },
+				"big-sequence/1_16": { "width": 756, "height": 1344 },
+				"big-sequence/1_17": { "width": 756, "height": 1344 },
+				"big-sequence/1_18": { "width": 756, "height": 1344 },
+				"big-sequence/1_19": { "width": 756, "height": 1344 },
+				"big-sequence/1_20": { "width": 756, "height": 1344 },
+				"big-sequence/1_21": { "width": 756, "height": 1344 },
+				"big-sequence/1_22": { "width": 756, "height": 1344 },
+				"big-sequence/1_23": { "width": 756, "height": 1344 },
+				"big-sequence/1_24": { "width": 756, "height": 1344 },
+				"big-sequence/1_25": { "width": 756, "height": 1344 },
+				"big-sequence/1_26": { "width": 756, "height": 1344 },
+				"big-sequence/1_27": { "width": 756, "height": 1344 },
+				"big-sequence/1_28": { "width": 756, "height": 1344 },
+				"big-sequence/1_29": { "width": 756, "height": 1344 }
 			}
 		}
 	}
