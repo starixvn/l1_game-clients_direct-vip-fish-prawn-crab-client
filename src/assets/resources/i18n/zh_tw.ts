@@ -206,7 +206,10 @@ export const languages = {
         "bet_option_prawn": "蝦",
         "bet_option_rooster": "公雞",
         "bet_option_stag": "麈",
-        "game_name": "VIP 魚蝦蟹"
+        "double": "雙倍",
+        "game_name": "VIP 魚蝦蟹",
+        "single": "單",
+        "triple": "三倍"
     }
 };
 

@@ -206,7 +206,10 @@ export const languages = {
         "bet_option_prawn": "กุ้ง",
         "bet_option_rooster": "ไก่ชน",
         "bet_option_stag": "กวาง",
-        "game_name": "VIP  ปลา กุ้ง ปู"
+        "double": "สองเท่า",
+        "game_name": "VIP  ปลา กุ้ง ปู",
+        "single": "เดี่ยว",
+        "triple": "สามเท่า"
     }
 };
 

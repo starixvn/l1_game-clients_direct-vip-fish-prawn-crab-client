@@ -204,9 +204,12 @@ export const languages = {
         "bet_option_fish": "Ikan",
         "bet_option_gourd": "Kundur",
         "bet_option_prawn": "Udang",
-        "bet_option_rooster": "Ayam jantan",
+        "bet_option_rooster": "Ayam Jantan",
         "bet_option_stag": "Rusa Jantan",
-        "game_name": "VIP Ikan Udang Kepiting"
+        "double": "Dobel",
+        "game_name": "VIP Ikan Udang Kepiting",
+        "single": "Single",
+        "triple": "Tripel"
     }
 };
 

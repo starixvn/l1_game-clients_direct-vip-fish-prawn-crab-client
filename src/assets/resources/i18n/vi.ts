@@ -206,7 +206,10 @@ export const languages = {
         "bet_option_prawn": "Tôm",
         "bet_option_rooster": "Gà",
         "bet_option_stag": "Nai",
-        "game_name": "Bầu Cua VIP"
+        "double": "Đôi",
+        "game_name": "Bầu Cua VIP",
+        "single": "Đơn",
+        "triple": "Bộ Ba"
     }
 };
 

@@ -7,7 +7,7 @@ const { render } = Observer;
 @ccclass("GameOdd")
 export class GameOdd extends ObserverComponent {
     @property(Node)
-    labelContainer: Node = null;
+    oddValues: Node[] = [];
 
     @render(gc.Rounds.RoundStore, (store) => store.roundOdds)
     renderOdds(roundOdds: gc.Rounds.RoundOdds) {
@@ -15,10 +15,12 @@ export class GameOdd extends ObserverComponent {
         if (!odds) {
             return;
         }
+
         Object.keys(odds).forEach((key) => {
-            const node = this.labelContainer.getChildByName(key);
-            if (node) {
-                const label = node.getComponent(Label);
+            const oddItem = this.oddValues.find((item) => item.name === key);
+
+            if (oddItem) {
+                const label = oddItem.getComponent(Label);
                 label.string = gc.FormatUtils.formatOdds(odds[key], fractional);
             }
         });

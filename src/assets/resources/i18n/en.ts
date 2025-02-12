@@ -206,7 +206,10 @@ export const languages = {
         "bet_option_prawn": "Prawn",
         "bet_option_rooster": "Rooster",
         "bet_option_stag": "Stag",
-        "game_name": "VIP Fish Prawn Crab"
+        "double": "Double",
+        "game_name": "VIP Fish Prawn Crab",
+        "single": "Single",
+        "triple": "Triple"
     }
 };
 
