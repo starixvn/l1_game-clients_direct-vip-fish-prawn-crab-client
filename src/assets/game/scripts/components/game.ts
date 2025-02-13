@@ -81,8 +81,11 @@ export default class Game extends GameComponent {
         }
 
         this.gameAnimation.setRandomPosition(roundId);
-        this.showResult(result, true, settlementResult).then(() => {
+        this.scheduleOnce(() => {
             this.playResultAudio(result);
+        }, 2);
+
+        this.showResult(result, true, settlementResult).then(() => {
             this.finishShowResult(result, settlementResult);
             this.chipFlying.callActionPayChips();
         });
