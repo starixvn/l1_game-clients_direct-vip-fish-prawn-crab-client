@@ -32,6 +32,12 @@ export default class Game extends GameComponent {
     @property(Node)
     nodeGameAnimation: Node = null;
 
+    @property(Node)
+    nodeGameAnimationBelowTheChip: Node = null;
+
+    @property(Node)
+    nodeGameAnimationAboveTheChip: Node = null;
+
     override namespace = settings.name;
     override containerOptions = containerOptions;
     protected enableFixHandleFinish = true;
@@ -51,12 +57,14 @@ export default class Game extends GameComponent {
         settlementResult: gc.GameServiceMessage.TSettlementResult
     ) {
         if (result) {
+            this.nodeGameAnimation.setParent(this.nodeGameAnimationAboveTheChip);
             await this.gameResultAnimation(result, hasAnimation);
         }
     }
 
     handleStartRound(isStartRound: boolean) {
         if (isStartRound) {
+            this.nodeGameAnimation.setParent(this.nodeGameAnimationBelowTheChip);
             this.gameAnimation.playAnimationShake();
         }
     }
@@ -87,6 +95,7 @@ export default class Game extends GameComponent {
 
         this.showResult(result, true, settlementResult).then(() => {
             this.finishShowResult(result, settlementResult);
+            this.nodeGameAnimation.setParent(this.nodeGameAnimationBelowTheChip);
             this.chipFlying.callActionPayChips();
         });
         this.playSound(gc.Audios.AudioIds.RECEIVE_FINISH);
@@ -127,7 +136,7 @@ export default class Game extends GameComponent {
         try {
             for (const choice of choices) {
                 this.playSound(`win_${choice}_${languageId}`);
-                await AnimationUtils.delayTime(0.4);
+                await AnimationUtils.delayTime(0.8);
             }
         } catch (e) {}
     }

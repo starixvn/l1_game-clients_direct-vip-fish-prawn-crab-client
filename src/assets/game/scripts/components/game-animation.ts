@@ -22,12 +22,6 @@ export class GameAnimation extends Component {
     @property(Node)
     randomPositionContainer: Node = null;
 
-    @property(Node)
-    abovePosition: Node = null;
-
-    @property(Node)
-    belowPosition: Node = null;
-
     onLoad() {
         this.randomPositionContainer.active = false;
     }
@@ -54,12 +48,10 @@ export class GameAnimation extends Component {
 
     async playAnimationOpen() {
         await AnimationUtils.playSpine(this.skeleton, GameAnimationType.Open, false, settings.durations.generatingResult);
-        this.node.setParent(this.belowPosition);
     }
 
     playAnimationShake() {
         AnimationUtils.playSpine(this.skeleton, GameAnimationType.Shake, false, settings.durations.startRound);
-        this.node.setParent(this.abovePosition);
     }
 
     playAnimationOpened() {
