@@ -1,6 +1,7 @@
 import gc from "@sg/game-client-base";
 import { _decorator, Color, instantiate, Label, Node } from "cc";
 import Observer from "observer";
+const { FormatUtils } = gc;
 import BetHistoryBodyItem, {
     BetHistoryBodyItemType,
 } from "../../../../../extensions/shared-components/assets/game/bet-history/scripts/components/bet-history-body-item";
@@ -38,7 +39,7 @@ export class CustomHistoryBodyItem extends BetHistoryBodyItem {
             const choiceLabel = node.getChildByName("choice").getComponent(Label);
             choiceLabel.string = `${gc.Translator.gameTranslate(`bet_option_${key}`)} @ ${detail.odds}`;
             const stakeLabel = node.getChildByName("stake").getComponent(Label);
-            stakeLabel.string = `${detail.bet}`;
+            stakeLabel.string = FormatUtils.numberWithCommas(detail.bet, 2);
 
             choiceLabel.color = detail.win ? Color.YELLOW : Color.WHITE;
             stakeLabel.color = detail.win ? Color.YELLOW : Color.WHITE;
