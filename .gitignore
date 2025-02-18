@@ -13,3 +13,4 @@ graphics/.pack_cache.json
 src/extensions/ccc-skeleton-viewer
 
 .codegpt
+src/profiles/v2/packages/reference-image.json

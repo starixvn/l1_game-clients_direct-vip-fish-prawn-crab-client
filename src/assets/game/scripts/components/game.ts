@@ -63,6 +63,7 @@ export default class Game extends GameComponent {
     }
 
     handleStartRound(isStartRound: boolean) {
+        this.playSound("shake");
         if (isStartRound) {
             this.nodeGameAnimation.setParent(this.nodeGameAnimationBelowTheChip);
             this.gameAnimation.playAnimationShake();
