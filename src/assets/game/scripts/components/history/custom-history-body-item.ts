@@ -1,16 +1,14 @@
 import gc from "@sg/game-client-base";
 import { _decorator, Color, instantiate, Label, Node } from "cc";
-import Observer from "observer";
-const { FormatUtils } = gc;
-import BetHistoryBodyItem, {
-    BetHistoryBodyItemType,
-} from "../../../../../extensions/shared-components/assets/game/bet-history/scripts/components/bet-history-body-item";
-import { DateTimeLabels } from "../../../../../extensions/shared-components/assets/shared/common-components/date-time-labels";
+import { BetHistoryNewBodyItem } from "db://shared-components/game/bet-history-new/scripts/bet-history-new-body-item";
+import { DateTimeLabels } from "db://shared-components/shared/common-components/date-time-labels";
+import { BetHistoryBodyItemType } from "../../../../../extensions/shared-components/assets/game/bet-history/scripts/components/bet-history-body-item";
 import { calculateMultiplier, RESULT_MAPPER } from "../../game-definitions";
+const { FormatUtils } = gc;
 const { ccclass, property } = _decorator;
-const { render } = Observer;
+
 @ccclass("CustomHistoryBodyItem")
-export class CustomHistoryBodyItem extends BetHistoryBodyItem {
+export class CustomHistoryBodyItem extends BetHistoryNewBodyItem {
     @property(Node)
     betContainer: Node = null;
 
@@ -30,14 +28,14 @@ export class CustomHistoryBodyItem extends BetHistoryBodyItem {
         super.setData(data);
 
         this.dateTimeLabels.setTime(data.betHistoryLog.time);
-
         const history = data.betHistoryLog;
         const details = this.createBetDetail(history);
         Object.keys(details).forEach((key, index) => {
             const detail = details[key];
             const node = index > 0 ? this.addNewBetDetail() : this.betSample;
             const choiceLabel = node.getChildByName("choice").getComponent(Label);
-            choiceLabel.string = `${gc.Translator.gameTranslate(`bet_option_${key}`)} @ ${detail.odds}`;
+            const odds = this.getFormatOdd(detail?.odds?.toString(), data?.fractionalOddsFormat);
+            choiceLabel.string = `${gc.Translator.gameTranslate(`bet_option_${key}`)} @ ${odds}`;
             const stakeLabel = node.getChildByName("stake").getComponent(Label);
             stakeLabel.string = FormatUtils.numberWithCommas(detail.bet, 2);
 
