@@ -313,7 +313,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 112.70703124999852,
+      "width": 112.7070312499983,
       "height": 55.44
     },
     "_anchorPoint": {
@@ -997,7 +997,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 140.3359375,
+      "width": 140.3359374999999,
       "height": 55.44
     },
     "_anchorPoint": {
@@ -1528,7 +1528,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 216.14,
+      "x": 226.14,
       "y": 0,
       "z": 0
     },
@@ -1659,7 +1659,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 122.18164062500017,
+      "width": 122.18164062500034,
       "height": 55.44
     },
     "_anchorPoint": {
@@ -1729,8 +1729,8 @@
     },
     "_alignFlags": 40,
     "_target": null,
-    "_left": 0.7241480553668477,
-    "_right": 0.20207076068085753,
+    "_left": 0.7362253500528381,
+    "_right": 0.1899934659948671,
     "_top": 0,
     "_bottom": 0,
     "_horizontalCenter": 0,
@@ -1870,7 +1870,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 341.508,
+      "x": 351.508,
       "y": 0,
       "z": 0
     },
@@ -2001,7 +2001,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 91.78125,
+      "width": 91.78124999999989,
       "height": 55.44
     },
     "_anchorPoint": {
@@ -2071,8 +2071,8 @@
     },
     "_alignFlags": 40,
     "_target": null,
-    "_left": 0.884737545289855,
-    "_right": 0.05983899456521747,
+    "_left": 0.8968148399758454,
+    "_right": 0.047761699879227064,
     "_top": 0,
     "_bottom": 0,
     "_horizontalCenter": 0,
@@ -2460,7 +2460,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 828.0000000000001,
+      "width": 828,
       "height": 50
     },
     "_anchorPoint": {
@@ -2556,7 +2556,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 828.0000000000001,
+      "width": 828,
       "height": 50
     },
     "_anchorPoint": {
