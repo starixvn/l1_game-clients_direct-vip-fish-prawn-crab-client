@@ -2487,6 +2487,7 @@
     },
     "usingDelayPayChips": false,
     "delayAnimPayChips": 5,
+    "supportChoices": "stag,gourd,rooster,fish,crab,prawn",
     "_id": "a9notS7qBFnaE7WcvCvMyO"
   },
   {
