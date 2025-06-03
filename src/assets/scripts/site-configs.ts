@@ -24,9 +24,6 @@ const defaultConfig: gc.Configs.SiteConfigs = {
         proxyPath: "vipfishprawncrab",
         route: "vipfishprawncrab",
     },
-    websocketOptions: {
-        timeout: 3000,
-    },
     mainObserverNamespace: "VipFishPrawnCrab",
     tolgeeUrl: "",
     storagePrefixKey: "portrait_vipfishprawncrab",
