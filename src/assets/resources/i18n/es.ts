@@ -36,7 +36,7 @@ export const languages = {
         "even_win": "Ganancias a la Par",
         "from": "desde",
         "game_category_new_releases": "Novedades",
-        "game_category_ph_1": "Todos los Juegos",
+        "game_category_ph_1": "Todos",
         "game_category_ph_2": "Pinoy Especial",
         "game_category_ph_3": "Tragaperras",
         "game_category_ph_4": "Juegos de Cartas",
@@ -234,7 +234,7 @@ export const languages = {
         "bet_option_rooster": "Gallo",
         "bet_option_stag": "Ciervo",
         "double": "Doblar",
-        "game_name": "VIP Pez Camarón Cangrejo",
+        "game_name": "VIP Pez, Camarón y Cangrejo",
         "single": "Individual",
         "triple": "Triple"
     }

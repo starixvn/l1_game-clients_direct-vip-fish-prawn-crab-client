@@ -38,7 +38,7 @@ export const languages = {
         "game_category_new_releases": "新作",
         "game_category_ph_1": "全ゲーム",
         "game_category_ph_2": "ピノイ・スペシャル",
-        "game_category_ph_3": "スロットゲーム",
+        "game_category_ph_3": "スロット",
         "game_category_ph_4": "カードゲーム",
         "game_category_ph_5": "カジュアルゲーム",
         "game_category_ph_6": "ロト",
@@ -227,14 +227,14 @@ export const languages = {
         "you_reach_max_win": "最大勝利額に達しました"
     },
     "VipFishPrawnCrab": {
-        "bet_option_crab": "カニ",
+        "bet_option_crab": "蟹",
         "bet_option_fish": "魚",
         "bet_option_gourd": "瓢箪",
-        "bet_option_prawn": "エビ",
-        "bet_option_rooster": "雄鶏",
-        "bet_option_stag": "雄鹿",
+        "bet_option_prawn": "海老",
+        "bet_option_rooster": "鶏",
+        "bet_option_stag": "鹿",
         "double": "ダブル",
-        "game_name": "VIP 魚・エビ・カニ",
+        "game_name": "VIP魚・海老・蟹",
         "single": "シングル",
         "triple": "トリプル"
     }
