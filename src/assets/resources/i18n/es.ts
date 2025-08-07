@@ -12,7 +12,7 @@ export const languages = {
         "bet_choice_home": "Local",
         "bet_choice_odd": "Impar",
         "bet_choice_over": "Over",
-        "betChoice_shorten": "Selección de Apuesta",
+        "betChoice_shorten": "Selección\nde Apuesta",
         "bet_choice_under": "Under",
         "bet_detail": "Detalles de la Apuesta",
         "bet_history": "Historial de Apuestas",
