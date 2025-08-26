@@ -9,12 +9,12 @@ declare global {
 
 const defaultConfig: gc.Configs.SiteConfigs = {
     isDev: false, // if this property is true, then you should add token=anything into the querytring to sso to the game http://localhost:7456/?token=anything
-    systemType: "SG",
+    systemType: "VG",
     serverDomainMapper: {
         localhost: "lumigame.com",
     },
     ssl: true,
-    subDomain: "l1-proxy1",
+    subDomain: "l2-proxy",
     env: "LOCAL",
     subGuideDomain: "l1-guide-1",
     SGConnectSubDomain: "connectsite",
@@ -24,10 +24,15 @@ const defaultConfig: gc.Configs.SiteConfigs = {
         proxyPath: "vipfishprawncrab",
         route: "vipfishprawncrab",
     },
-    mainObserverNamespace: "VipFishPrawnCrab",
     tolgeeUrl: "",
     storagePrefixKey: "portrait_vipfishprawncrab",
     backgroundNoTranslate: true,
+    sentry: {
+        dsn: "https://a47db4a57ef2cfe5b9fc433384b40e00@sentry-kl.sgamesuat.com/28",
+        browserUrl: "https://browser.sentry-cdn.com/10.5.0/bundle.min.js",
+        urlHash: "sha384-SAsRvjfAFRX3iwi3MG6ToeZNJVpHcRXKcITfFVLQipWK3uQ8SakuVmHDoSR3YNmJ",
+        ignoreErrors: [],
+    },
 };
 
 let configDev = {

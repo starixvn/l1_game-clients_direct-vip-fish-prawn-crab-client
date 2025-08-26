@@ -11,7 +11,8 @@ import Observer from "observer";
 import { AnimationUtils } from "../../../../extensions/shared-components/assets/shared/utils";
 import { siteConfigs } from "../../../scripts/site-configs";
 import { RESULT_MAPPER } from "../game-definitions";
-import { containerOptions, settings } from "../game-settings";
+import { settings } from "../game-settings";
+import { containerOptions } from "../containerOptions";
 import { GameAnimation } from "./game-animation";
 
 startGame(settings.name, containerOptions, siteConfigs, settings.namespaces);
