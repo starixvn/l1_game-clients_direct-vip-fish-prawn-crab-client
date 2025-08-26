@@ -35,7 +35,8 @@ export class CustomHistoryBodyItem extends BetHistoryNewBodyItem {
             const node = index > 0 ? this.addNewBetDetail() : this.betSample;
             const choiceLabel = node.getChildByName("choice").getComponent(Label);
             const odds = this.getFormatOdd(detail?.odds?.toString(), data?.fractionalOddsFormat);
-            choiceLabel.string = `${gc.Translator.gameTranslate(`bet_option_${key}`)} @ ${odds}`;
+            const label = gc.Translator.gameTranslate(`bet_option_${key}`);
+            choiceLabel.string = `${label} @ ${odds}`;
             const stakeLabel = node.getChildByName("stake").getComponent(Label);
             stakeLabel.string = FormatUtils.numberWithCommas(detail.bet, 2);
 
@@ -95,18 +96,27 @@ export class CustomHistoryBodyItem extends BetHistoryNewBodyItem {
     private createBetDetail(history: any) {
         const multipliers = calculateMultiplier(history.result);
 
-        const details = RESULT_MAPPER.reduce((acc, choice) => {
-            if (history[choice] > 0) {
-                const multiplier = multipliers[choice] ?? 1;
-                const oddType = multiplier === 1 ? "single" : multiplier === 2 ? "double" : "triple";
-                acc[choice] = {
-                    odds: history.odds[oddType],
-                    bet: history[choice] || 0,
-                    win: history.settlementResult[choice],
-                };
-            }
-            return acc;
-        }, {} as Record<string, { odds: number; bet: number; win: boolean }>);
-        return details;
+        const oddTypeMap: Record<number, "single" | "double" | "triple"> = {
+            1: "single",
+            2: "double",
+            3: "triple",
+        };
+
+        return RESULT_MAPPER.reduce<Record<string, { odds: number; bet: number; win: boolean }>>(
+            (acc, choice) => {
+                const bet = history[choice] ?? 0;
+                if (bet > 0) {
+                    const multiplier = multipliers[choice] ?? 1;
+                    const oddType = oddTypeMap[multiplier] ?? "triple";
+                    acc[choice] = {
+                        odds: history.odds[oddType],
+                        bet,
+                        win: history.settlementResult[choice],
+                    };
+                }
+                return acc;
+            },
+            {}
+        );
     }
 }
