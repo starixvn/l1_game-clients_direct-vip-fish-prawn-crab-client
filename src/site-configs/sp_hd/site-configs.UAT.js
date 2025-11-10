@@ -1,5 +1,5 @@
 window.envConfig = {
-    systemType: "SG",
+    systemType: "HD",
     ssl: true,
     subDomain: "hduatproxy",
     env: "UAT",
@@ -9,4 +9,5 @@ window.envConfig = {
     enableMsgpackParserOnNotification: true,
     subDirectory: "uat",
     SGConnectSubDomain: "l1uatconnectsite",
+    clientSubDomain: "hduatclient",
 };
