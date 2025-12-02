@@ -4,6 +4,7 @@ import { BetHistoryNewBodyItem } from "db://shared-components/game/bet-history-n
 import { DateTimeLabels } from "db://shared-components/shared/common-components/date-time-labels";
 import { BetHistoryBodyItemType } from "../../../../../extensions/shared-components/assets/game/bet-history/scripts/components/bet-history-body-item";
 import { calculateMultiplier, RESULT_MAPPER } from "../../game-definitions";
+import { formatCurrencyWithConfig } from "db://shared-components/shared/utils";
 const { FormatUtils } = gc;
 const { ccclass, property } = _decorator;
 
@@ -38,7 +39,7 @@ export class CustomHistoryBodyItem extends BetHistoryNewBodyItem {
             const label = gc.Translator.gameTranslate(`bet_option_${key}`);
             choiceLabel.string = `${label} @ ${odds}`;
             const stakeLabel = node.getChildByName("stake").getComponent(Label);
-            stakeLabel.string = FormatUtils.numberWithCommas(detail.bet, 2);
+            stakeLabel.string = formatCurrencyWithConfig(detail.bet);
 
             choiceLabel.color = detail.win ? Color.YELLOW : Color.WHITE;
             stakeLabel.color = detail.win ? Color.YELLOW : Color.WHITE;

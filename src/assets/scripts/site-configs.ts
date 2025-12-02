@@ -33,6 +33,7 @@ const defaultConfig: gc.Configs.SiteConfigs = {
         urlHash: "sha384-SAsRvjfAFRX3iwi3MG6ToeZNJVpHcRXKcITfFVLQipWK3uQ8SakuVmHDoSR3YNmJ",
         ignoreErrors: [],
     },
+    decimalPlaces: 4,
 };
 
 let configDev = {
